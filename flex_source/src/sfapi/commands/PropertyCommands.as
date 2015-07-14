@@ -169,9 +169,10 @@ package sfapi.commands
 		 */
 		public function doFlexProperty(id:String, setval:String):String
 		{
-			var child:Object = appTreeParser.getElement(id);
+			
 			var locator:Array = id.split(".");
 			id = locator[0];
+			var child:Object = appTreeParser.getElement(id);
 			var property:String = locator[1];
 
 			if(child.hasOwnProperty(property))

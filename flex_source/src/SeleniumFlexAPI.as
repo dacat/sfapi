@@ -74,12 +74,12 @@ package
 			appTreeParser = new AppTreeParser();
 			appTreeParser.thisApp = sysRoot.getChildAt(0);
 			seleniumFlexAPI = this;						
-			appTreeParser.setTooltipsToID();
-			appTreeParser.thisApp.addEventListener(KeyboardEvent.KEY_UP, refreshToolTips);
-			commands = new Commands(appTreeParser);
+			//appTreeParser.setTooltipsToID();
+			//appTreeParser.thisApp.addEventListener(KeyboardEvent.KEY_UP, refreshToolTips);
+			//commands = new Commands(appTreeParser);
 			
-			sysRoot.addEventListener(MouseEvent.CLICK, RecordingEventHandler.handleMouseClicked);
-			appTreeParser.thisApp.addEventListener(KeyboardEvent.KEY_UP, refreshToolTips);			
+			//sysRoot.addEventListener(MouseEvent.CLICK, RecordingEventHandler.handleMouseClicked);
+			//appTreeParser.thisApp.addEventListener(KeyboardEvent.KEY_UP, refreshToolTips);			
 			appTreeParser.thisApp.addEventListener(MouseEvent.MOUSE_MOVE, updateMousePosition);
 			commands = new Commands(appTreeParser);
 			
@@ -96,7 +96,7 @@ package
 				
 			appTreeParser.curMouseX = 0;
 			appTreeParser.curMouseY = 0;	
-			initContextMenu();		
+			//initContextMenu();		
 		}
 		
 		private function updateMousePosition(event:MouseEvent):void {
